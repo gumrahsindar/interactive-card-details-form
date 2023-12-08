@@ -82,13 +82,26 @@
 
 .form-container input {
   height: var(--size-800);
+  padding-left: var(--size-300);
   border-radius: var(--size-200);
   border: 1px solid var(--clr-secondary-dark-grayish-violet);
+  font-size: 1.8rem;
+}
+
+.form-container input:focus {
+  outline: none;
+  border: 2px solid var(--clr-primary-from);
+}
+
+.form-container input::placeholder {
+  color: var(--clr-secondary-very-dark-violet);
+  opacity: 0.25;
+  font-size: var(--size-350);
 }
 
 .form {
   padding-inline: 12px;
-  margin-top: var(--size-600);
+  margin-top: -2rem;
   color: var(--clr-secondary-very-dark-violet);
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -106,9 +119,9 @@
 
 .exp-date-cvc {
   display: flex;
-
   align-items: center;
   justify-content: space-between;
+  gap: var(--size-200);
 }
 
 .exp-date {
@@ -122,6 +135,18 @@
 
 .exp-date-yy label {
   visibility: hidden;
+}
+
+.btn {
+  width: 100%;
+  padding-block: 1.5rem;
+  border: none;
+  border-radius: var(--size-200);
+  background-color: var(--clr-secondary-very-dark-violet);
+  color: var(--clr-secondary-white);
+  font-size: var(--size-350);
+  outline: none;
+  cursor: pointer;
 }
 
 @media (min-width: 640px) {
@@ -162,6 +187,13 @@
   }
   .card-footer {
     font-size: var(--size-250);
+  }
+
+  .form {
+    margin-top: 0;
+  }
+  .form-item {
+    margin-bottom: var(--size-550);
   }
 }
 
