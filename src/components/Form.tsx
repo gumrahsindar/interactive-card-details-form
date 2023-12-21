@@ -154,8 +154,8 @@ export default function Form({ onInputChange }: FormProps) {
               <label htmlFor='exp-date'>Exp. Date (mm yy)</label>
               <input
                 type='number'
-                name='exp-date'
-                id='exp-date'
+                name='exp-date-month'
+                id='exp-date-mm'
                 placeholder='MM'
                 onChange={(e) => onInputChange('month', e.target.value)}
                 onBlur={handleExpDateBlur}
@@ -166,8 +166,8 @@ export default function Form({ onInputChange }: FormProps) {
               <label htmlFor='exp-date'>YY</label>
               <input
                 type='number'
-                name='exp-date'
-                id='exp-date'
+                name='exp-date-year'
+                id='exp-date-yy'
                 placeholder='YY'
                 onChange={(e) => onInputChange('year', e.target.value)}
               />
