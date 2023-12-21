@@ -128,8 +128,8 @@ export default function Form({ onInputChange }: FormProps) {
             <label htmlFor='card-number'>Cardholder Name</label>
             <input
               type='text'
-              name='card-number'
-              id='card-number'
+              name='name'
+              id='card-name'
               placeholder='e.g. Jane Appleseed'
               onChange={(e) => onInputChange('name', e.target.value)}
               onBlur={handleNameBlur}
@@ -140,7 +140,7 @@ export default function Form({ onInputChange }: FormProps) {
             <label htmlFor='card-number'>Card Number</label>
             <input
               type='text'
-              name='card-number'
+              name='number'
               id='card-number'
               placeholder='e.g. 1234 5678 9123 0000'
               onChange={(e) => onInputChange('number', e.target.value)}
