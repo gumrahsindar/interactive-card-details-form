@@ -91,8 +91,17 @@ export default function Form({ onInputChange }: FormProps) {
       cvc: e.currentTarget.elements.namedItem('cvc') as HTMLInputElement,
     }
 
-    for (const input in inputs) {
-      if (inputs[input]?.value.trim() === '') {
+    // for (const input in inputs) {
+    //   if (inputs[input]?.value.trim() === '') {
+    //     return
+    //   }
+    // }
+    for (const inputKey of Object.keys(inputs)) {
+      const inputName = inputKey as keyof typeof inputs
+      const inputValue = inputs[inputName]?.value.trim()
+
+      if (inputValue === '') {
+        // Eğer boş bir alan varsa, işlem yapma
         return
       }
     }
