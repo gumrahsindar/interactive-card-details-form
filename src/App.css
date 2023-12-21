@@ -104,7 +104,7 @@
   margin-top: -2rem;
   color: var(--clr-secondary-very-dark-violet);
   font-size: 1.2rem;
-  text-transform: uppercase;
+
   letter-spacing: var(--size-50);
 }
 
@@ -113,19 +113,25 @@
 }
 
 .form-item label {
+  text-transform: uppercase;
   display: block;
   margin-bottom: var(--size-100);
 }
 
+.form .error {
+  margin-top: var(--size-100);
+  letter-spacing: normal;
+  color: red;
+}
+
 .exp-date-cvc {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: var(--size-200);
 }
 
 .exp-date {
-  width: 22%;
+  width: 20%;
   white-space: nowrap;
 }
 
@@ -195,6 +201,28 @@
   .form-item {
     margin-bottom: var(--size-550);
   }
+}
+
+.success-container {
+  text-align: center;
+}
+
+.success-img {
+  margin-inline: auto;
+  margin-bottom: 4rem;
+}
+
+.success-heading {
+  font-size: var(--size-550);
+  margin-bottom: var(--size-300);
+  color: var(--clr-secondary-very-dark-violet);
+  text-transform: uppercase;
+  letter-spacing: var(--size-100);
+}
+
+.success-desc {
+  color: var(--clr-secondary-dark-grayish-violet);
+  margin-bottom: var(--size-900);
 }
 
 @media (max-width: 1200px) and (min-width: 640px) {

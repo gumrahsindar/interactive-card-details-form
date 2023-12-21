@@ -1,7 +1,6 @@
+import { useState } from 'react'
 import Form from './components/Form'
 import Card from './components/Card'
-
-import { useState } from 'react'
 
 import './App.css'
 
